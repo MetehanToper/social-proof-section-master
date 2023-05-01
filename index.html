@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social proof section</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: 'League Spartan', sans-serif;
+        box-sizing: border-box;
+        background-image: url("./images/bg-pattern-bottom-desktop.svg"),
+        url("./images/bg-pattern-top-desktop.svg");
+        background-repeat: no-repeat;
+      }
+      .conteiner{
+        height: 100vh; 
+      }
+      .up-side{
+        height: 50vh;
+        display: flex;
+      }
+      .header-side{
+        width: 50%;
+        position: relative;
+      }
+      .h-box{
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        left: 100px;
+        top: 20px;
+      }
+      .header{
+        color: hsl(300, 43%, 22%) ;
+        line-height: 40px;
+        font-size: 40px;
+        font-weight: 900;
+        
+      }
+      .paragraph{
+        font-size:16px;
+        font-weight: 400;
+        opacity: .6;
+        width: 400px;
+        position: absolute;
+        bottom: -15px;
+      }
+      .reviews{
+        width: 400px;
+        height: 35px;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        top: 70px;
+        left: 0;
+      }
+      .reviews img{
+        width:17px;
+        height: 16px;
+        position: relative;
+        top:10px;
+        left: 20px;
+        
+      }
+      .reviews p{
+        font-size: 16px;
+        font-weight: 700;
+        color:hsl(300, 43%, 22%) ;
+        position: absolute;
+        left: 140px;
+        bottom: -10px;
+      }
+
+      .guru{
+        width: 400px;
+        height: 35px;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        top: 110px;
+        left: 60px;
+      }
+      .guru img{
+        width:17px;
+        height: 16px;
+        position: relative;
+        top:10px;
+        left: 20px;
+      }
+      .guru p{
+        font-size: 16px;
+        font-weight: 700;
+        color:hsl(300, 43%, 22%) ;
+        position: absolute;
+        left: 140px;
+        bottom: -10px;
+      }
+
+      .best-tech{
+        width: 400px;
+        height: 35px;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 5px;
+        display: flex;
+        position: relative;
+        top: 150px;
+        left: 115px;
+      }
+      .best-tech img{
+        width:17px;
+        height: 16px;
+        position: relative;
+        top:10px;
+        left: 20px;
+      }
+      .best-tech p{
+        font-size: 16px;
+        font-weight: 700;
+        color:hsl(300, 43%, 22%) ;
+        position: absolute;
+        left: 140px;
+        bottom: -10px;
+      }
+      .down-side{
+        height: 50vh;
+        display: flex;
+        position: relative;
+      }
+      .box-colton{
+        width: 300px;
+        height: 200px;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        position: relative;
+        left: 100px;
+        padding: 10px;
+      }
+      .box-colton img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+      }
+      .box-colton h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 80px;
+        top:10px;
+      }
+      .box-colton span{
+        color:hsl(333, 80%, 67%) ;
+        font-size: 18px;
+        font-weight: 400;
+        position: absolute;
+        left:82px;
+        top: 53px;
+      }
+    .box-colton p {
+      color:white;
+      font-size: 16px;
+      font-weight: 500;
+      position: absolute;
+      left:15px;
+      top: 90px;
+    }
+
+    .box-irine{
+        width: 300px;
+        height: 200px;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        position: relative;
+        left: 170px;
+        top:30px;
+        padding: 10px;
+      }
+      .box-irine img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+      }
+      .box-irine h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 80px;
+        top:10px;
+      }
+      .box-irine span{
+        color:hsl(333, 80%, 67%) ;
+        font-size: 18px;
+        font-weight: 400;
+        position: absolute;
+        left:82px;
+        top: 53px;
+      }
+    .box-irine p {
+      color:white;
+      font-size: 16px;
+      font-weight: 500;
+      position: absolute;
+      left:15px;
+      top: 90px;
+    }
+
+    .box-anne{
+        width: 300px;
+        height: 200px;
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        position: relative;
+        left: 230px;
+        top:60px;
+        padding: 10px;
+      }
+      .box-anne img{
+        width:40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+      }
+      .box-anne h3{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        position: absolute;
+        left: 80px;
+        top:10px;
+      }
+      .box-anne span{
+        color:hsl(333, 80%, 67%) ;
+        font-size: 18px;
+        font-weight: 400;
+        position: absolute;
+        left:82px;
+        top: 53px;
+      }
+    .box-anne p {
+      color:white;
+      font-size: 16px;
+      font-weight: 500;
+      position: absolute;
+      left:15px;
+      top: 90px;
+    }
+
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="conteiner">
+        <section class="up-side">
+          <article class="header-side" >
+            <div class="h-box">
+            <h1 class="header">10,000+ of our users love our products.</h1>
+            <p class="paragraph"> We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.</p>
+          </div>  
+          </article>
+          <article class="star-side">
+            <div class="reviews">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+                <p> Rated 5 Stars in Reviews</p>
+              </div>
+              <div class="guru">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <img src="./images/icon-star.svg" alt="">
+                <p> Rated 5 Stars in Report Guru </p>
+              </div>
+              <div class="best-tech">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+              <img src="./images/icon-star.svg" alt="">
+                <p> Rated 5 Stars in BestTech </p>
+              </div>
+          </article>
+        </section>
+        <section class="down-side">
+         <div class="box-colton">
+            <img src="./images/image-colton.jpg" alt="">
+            <h3>Colton Smith </h3>
+            <span>Verified Buyer</span> 
+            <p> "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"</p>
+         </div> 
+         <div class="box-irine">
+            <img src="./images/image-irene.jpg" alt="">
+            <h3>Irene Roberts  </h3>
+            <span>Verified Buyer</span> 
+            <p> "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+       </div> 
+       <div class="box-anne">
+          <img src="./images/image-anne.jpg" alt="">
+          <h3>Anne Wallace</h3>
+          <span>Verified Buyer</span> 
+          <p> "Put an order with this company and can only praise them for the very high standard. Will definitely use them again and recommend them to everyone!"
+          </p>
+       </div> 
+        </section>
+        <article ></article>
+    </main>
+    
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mete Han TOPER</a>.
+    </div>
+  </body>
+</html>
